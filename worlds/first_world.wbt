@@ -3,7 +3,6 @@
 EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/floors/protos/Floor.proto"
 EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/appearances/protos/Parquetry.proto"
 EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/apartment_structure/protos/Wall.proto"
-EXTERNPROTO "../protos/TexturedBackgroundLight.proto"
 EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/apartment_structure/protos/Window.proto"
 EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/appearances/protos/MattePaint.proto"
 EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/apartment_structure/protos/Door.proto"
@@ -17,12 +16,19 @@ EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/project
 EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/cabinet/protos/Cabinet.proto"
 EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/plants/protos/BunchOfSunFlowers.proto"
 EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "../protos/TexturedBackgroundLight.proto"
 
 WorldInfo {
 }
 Viewpoint {
-  orientation 0.31868880345697725 0.38081595201634905 -0.8679957702898339 1.534271783703527
-  position -1.970761425450755 13.370779228124523 11.85980355559293
+  orientation 0.06808979573836202 -0.990579482986048 -0.11881105842219335 5.234199195096334
+  position -7.012187308759669 0.6972770263734366 7.713899881761727
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+  castShadows FALSE
 }
 Floor {
   size 12 8
@@ -66,9 +72,6 @@ Wall {
   name "wall_right"
   size 0.2 7.6 2.4
 }
-TexturedBackgroundLight {
-  castShadows FALSE
-}
 Window {
   translation 0 3.9 0
   rotation 0 0 1 1.5708
@@ -91,6 +94,7 @@ Door {
   translation 4 3.9 0
   rotation 0 0 1 1.5708
   size 0.2 2 2.4
+  position -0.001575717646308057
   frameAppearance MattePaint {
     baseColor 0 0 0
   }
@@ -128,7 +132,7 @@ RectangleArena {
     roughness 1
     metalness 0
     textureTransform TextureTransform {
-      scale 0.1 0.1
+      scale 0.1 0.09
     }
   }
 }
@@ -138,7 +142,8 @@ Solid {
       translation 1.38149 1.60958 0
       children [
         OfficeChair {
-          translation 2.0436 -1.58985 5.68434e-14
+          translation 2.0436015324528167 -1.589849971441942 -0.00036566114903571756
+          rotation 0.01863199995068641 -0.9998264092220392 -3.2289356992925717e-08 1.0774334077471826e-05
         }
         Monitor {
           translation 2.97692 -1.40414 0.74
@@ -153,7 +158,7 @@ Solid {
           translation 2.71677 -1.6543 0.74
         }
         ComputerMouse {
-          translation 2.67323 -2.01661 0.74
+          translation 2.67323 -2.01661 0.739995937218171
         }
         Table {
           translation 3.00063 -1.7504 0
@@ -172,7 +177,8 @@ Solid {
       translation 1.39344 -0.32886 0
       children [
         OfficeChair {
-          translation 2.0436 -1.58985 5.68434e-14
+          translation 2.0436015324528163 -1.589849971441942 -0.0003656611490357453
+          rotation 0.01863199995066132 -0.9998264092220397 -3.228935710446982e-08 1.0774334077482795e-05
         }
         Monitor {
           translation 2.97692 -1.40414 0.74
@@ -187,7 +193,7 @@ Solid {
           translation 2.71677 -1.6543 0.74
         }
         ComputerMouse {
-          translation 2.67323 -2.01661 0.74
+          translation 2.67323 -2.01661 0.739995937218171
         }
         Table {
           translation 3.00063 -1.7504 0
@@ -213,7 +219,8 @@ Solid {
       translation 1.38149 1.60958 0
       children [
         OfficeChair {
-          translation 2.0436 -1.58985 5.68434e-14
+          translation 2.043601532452815 -1.5898499714419425 -0.00036566114903571756
+          rotation 0.01863199995063101 -0.9998264092220402 -3.228935812920401e-08 1.07743340774691e-05
         }
         Monitor {
           translation 2.97692 -1.40414 0.74
@@ -228,7 +235,7 @@ Solid {
           translation 2.71677 -1.6543 0.74
         }
         ComputerMouse {
-          translation 2.67323 -2.01661 0.74
+          translation 2.67323 -2.01661 0.739995937218171
         }
         Table {
           translation 3.00063 -1.7504 0
@@ -247,7 +254,8 @@ Solid {
       translation 1.39344 -0.32886 0
       children [
         OfficeChair {
-          translation 2.0436 -1.58985 5.68434e-14
+          translation 2.0436015324528154 -1.589849971441942 -0.00036566114903571756
+          rotation 0.018631999950610965 -0.9998264092220406 -3.228935101441886e-08 1.0774334077487385e-05
         }
         Monitor {
           translation 2.97692 -1.40414 0.74
@@ -262,7 +270,7 @@ Solid {
           translation 2.71677 -1.6543 0.74
         }
         ComputerMouse {
-          translation 2.67323 -2.01661 0.74
+          translation 2.67323 -2.01661 0.739995937218171
         }
         Table {
           translation 3.00063 -1.7504 0
@@ -279,4 +287,290 @@ Solid {
     }
   ]
   name "office_suite2"
+}
+Robot {
+  translation -2.99924 1.92322 -0.0628465
+  rotation 0 0 -1 1.5720800000000001
+  children [
+    LED {
+      translation 0 0 0.56
+      children [
+        Shape {
+          appearance PBRAppearance {
+          }
+          geometry Cylinder {
+            height 0.05
+            radius 0.02
+          }
+        }
+      ]
+    }
+    DistanceSensor {
+      translation 0.1 0 0.2
+      rotation 0 1 0 1.5708
+      name "dis_sen_right"
+      lookupTable [
+        0 0 0
+        1 100 0
+      ]
+      type "infra-red"
+    }
+    DistanceSensor {
+      translation -0.15 0 0.2
+      rotation 0 1 0 1.5708
+      name "dis_sen_left"
+      lookupTable [
+        0 0 0
+        1 100 0
+      ]
+      type "infra-red"
+    }
+    DistanceSensor {
+      translation 0 0.15 0.4
+      rotation 0 0 1 1.5708
+      name "dis_sen_front"
+      lookupTable [
+        0 0 0
+        5 50 0
+      ]
+    }
+    Camera {
+      translation -0.1 0.125 0.475
+      rotation 0 0 1 1.5708
+      name "left_camera"
+    }
+    Camera {
+      translation 0.1 0.125 0.475
+      rotation 0 0 1 1.309
+      name "right_camera"
+    }
+    Solid {
+      translation 0 0.15 0.4
+      rotation 1 0 0 -1.5707953071795862
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.286275 0.458824 0.784314
+            roughness 1
+          }
+          geometry Cone {
+            bottomRadius 0.02
+            height 0.05
+          }
+        }
+      ]
+      name "nose"
+    }
+    Solid {
+      translation 0.1 0.11 0.475
+      rotation 1 0 0 1.5708
+      children [
+        Shape {
+          geometry Cylinder {
+            height 0.01
+            radius 0.02
+          }
+        }
+      ]
+      name "right_eye"
+    }
+    Solid {
+      translation -0.1 0.11 0.475
+      rotation 1 0 0 1.5708
+      children [
+        Shape {
+          geometry Cylinder {
+            height 0.01
+            radius 0.02
+          }
+        }
+      ]
+      name "left_eye"
+    }
+    HingeJoint {
+      jointParameters HingeJointParameters {
+        position 7.31281139407771
+        axis -1 0 0
+        anchor -0.2 0.15 0.2
+      }
+      device [
+        RotationalMotor {
+          name "left_motor"
+        }
+      ]
+      endPoint Solid {
+        translation -0.2 0.15 0.2
+        rotation 0.44172925263053187 -0.7808643296177372 0.4417308751956487 4.467515996695346
+        children [
+          DEF left_wheel Shape {
+            appearance PBRAppearance {
+              baseColor 1 0.333333 0
+              baseColorMap ImageTexture {
+                url [
+                  "76c09ca1980ba6d6.jpg"
+                ]
+              }
+              roughness 1
+              metalness 0
+              emissiveColor 1 0.333333 0
+              emissiveColorMap ImageTexture {
+                url [
+                  "76c09ca1980ba6d6.jpg"
+                ]
+              }
+            }
+            geometry Cylinder {
+              height 0.07
+              radius 0.1
+            }
+          }
+        ]
+        name "left_wheel"
+        boundingObject USE left_wheel
+        physics Physics {
+        }
+      }
+    }
+    HingeJoint {
+      jointParameters HingeJointParameters {
+        position 7.312812166903233
+        axis -1 0 0
+        anchor 0.2 0.15 0.2
+      }
+      device [
+        RotationalMotor {
+          name "right_motor"
+        }
+      ]
+      endPoint Solid {
+        translation 0.2 0.15 0.2
+        rotation 0.44172949558555874 -0.780864054740829 0.4417311181515734 4.467515655180376
+        children [
+          DEF right_wheel Shape {
+            appearance PBRAppearance {
+              baseColor 1 0.333333 0
+              baseColorMap ImageTexture {
+                url [
+                  "76c09ca1980ba6d6.jpg"
+                ]
+              }
+              roughness 1
+              metalness 0
+              emissiveColor 1 0.333333 0
+              emissiveColorMap ImageTexture {
+                url [
+                  "76c09ca1980ba6d6.jpg"
+                ]
+              }
+            }
+            geometry Cylinder {
+              height 0.07
+              radius 0.1
+            }
+          }
+        ]
+        name "right_wheel"
+        boundingObject USE right_wheel
+        physics Physics {
+          damping Damping {
+          }
+        }
+      }
+    }
+    HingeJoint {
+      jointParameters HingeJointParameters {
+        position 7.253705082133484
+        axis -1 0 0
+        anchor 0 -0.1 0.17
+      }
+      device [
+        RotationalMotor {
+          name "back_motor"
+        }
+      ]
+      endPoint Solid {
+        translation 0 -0.1 0.17
+        rotation 0.4227142029150463 -0.801638380189465 0.42271575563386304 4.493067381213431
+        children [
+          DEF back_wheel Shape {
+            appearance PBRAppearance {
+              baseColor 1 0.333333 0
+              baseColorMap ImageTexture {
+                url [
+                  "76c09ca1980ba6d6.jpg"
+                ]
+              }
+              roughness 1
+              metalness 0
+              emissiveColor 1 0.333333 0
+              emissiveColorMap ImageTexture {
+                url [
+                  "76c09ca1980ba6d6.jpg"
+                ]
+              }
+            }
+            geometry Cylinder {
+              height 0.07
+              radius 0.06
+            }
+          }
+        ]
+        name "back_wheel"
+        boundingObject USE back_wheel
+        physics Physics {
+          damping Damping {
+            angular 1
+          }
+        }
+      }
+    }
+    Solid {
+      translation 0 0 0.4
+      children [
+        DEF body_shape Shape {
+          appearance PBRAppearance {
+            baseColor 0.117647 0.4 0.929412
+            roughness 1
+            metalness 0
+          }
+          geometry Cylinder {
+            height 0.3
+            radius 0.14
+          }
+        }
+      ]
+      name "body"
+      boundingObject USE body_shape
+    }
+  ]
+  boundingObject Pose {
+    translation 0 0 0.4
+    children [
+      USE body_shape
+    ]
+  }
+  physics Physics {
+    density 500
+  }
+  controller "my_controller"
+}
+Solid {
+  translation -3.56018 1.95957 0.443463
+  rotation 5.42476e-18 -3.17736e-18 1 1.5708
+  children [
+    DEF block Shape {
+      appearance PBRAppearance {
+        baseColor 1 0.0941176 0.729412
+        roughness 1
+        metalness 0
+        emissiveColor 0 0.333333 1
+      }
+      geometry Box {
+        size 0.5 0.3 0.7
+      }
+    }
+  ]
+  boundingObject USE block
+  physics Physics {
+  }
 }
