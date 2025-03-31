@@ -42,6 +42,7 @@ right_camera.enable(timestep)
 
 # Main loop:
 # - perform simulation steps until Webots is stopping the controller
+loop_counter = 0
 while robot.step(timestep) != -1:
     dis_front = ds_front.getValue()
     dis_left = ds_left.getValue()
@@ -51,7 +52,11 @@ while robot.step(timestep) != -1:
         right_motor.setVelocity(0.0)
         back_motor.setVelocity(0.0)
         back_motor.setAvailableTorque(10.0)
+        led.set(1)
     else:
+        if loop_counter % 10 == 0:
+            led_value = 0 if led.get() == 1 else 1
+            led.set(led_value)
         if dis_left - dis_right > 5:
             left_motor.setVelocity(0.0)
             right_motor.setVelocity(1.5)
@@ -67,7 +72,7 @@ while robot.step(timestep) != -1:
             left_motor.setVelocity(1.0)
             back_motor.setTorque(0.0)      # 关闭电机扭矩输出
             back_motor.setAvailableTorque(0.0)  # 可选：限制最大扭矩为 0
-        
+    loop_counter += 1    
     # Read the sensors:
     # Enter here functions to read sensor data, like:
     #  val = ds.getValue()
